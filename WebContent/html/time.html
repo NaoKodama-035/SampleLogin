@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>診療時間</title>
+
+<style type="text/css">
+h1, li {
+	text-align: center;
+}
+
+h1 {
+	color: #FF773E
+}
+
+header {
+	border-top: double 10px #8B4513;
+}
+
+li {
+	list-style: none;
+	width: 33%;
+	float: left;
+}
+
+li a {
+	color: #8B4513;
+}
+
+li a:hover {
+	text-decoration: none;
+}
+
+ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ul {
+	padding: 0;
+}
+
+h2 {
+	color: #8B4513;
+	text-align: center;
+	padding: 1rem 2rem;
+	border-bottom: 3px solid #FF773E;
+	background: #FFFFBB;
+}
+
+div {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table {
+	text-align: center;
+	table-layout: fixed;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 40px;
+}
+
+tr {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+th, td {
+	height: 60px;
+}
+
+td#symbol {
+	color: #FF773E;
+}
+
+footer {
+	border-bottom: solid 10px #8B4513;
+	padding-top: 20px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>あさかリードタウン皮フ科</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="time.html">診療時間</a></li>
+			<li><a href="../jsp/login-out.jsp">ホーム</a></li>
+			<li><a href="access.html">アクセス</a></li>
+		</ul>
+	</nav>
+	<div>
+		<main>
+			<section>
+				<h2>診療時間</h2>
+				<table>
+					<tr>
+						<th>診療時間</th>
+						<td>月</td>
+						<td>火</td>
+						<td>水</td>
+						<td>木</td>
+						<td>金</td>
+						<td>土</td>
+						<td>日</td>
+					</tr>
+					<tr>
+						<th>9:30～13:00</th>
+						<td id="symbol">●</td>
+						<td id="symbol">●</td>
+						<td id="symbol">●</td>
+						<td id="symbol">-</td>
+						<td id="symbol">●</td>
+						<td id="symbol">▲</td>
+						<td id="symbol">-</td>
+					</tr>
+					<tr>
+						<th>14:30～18:30</th>
+						<td id="symbol">●</td>
+						<td id="symbol">●</td>
+						<td id="symbol">●</td>
+						<td id="symbol">-</td>
+						<td id="symbol">●</td>
+						<td id="symbol">-</td>
+						<td id="symbol">-</td>
+					</tr>
+				</table>
+
+				<p id="time">
+					通常診療時間 9:30～18:30<br> ▲：9:30～13:30<br> 受付は終了時刻の15分前まで<br>
+					日曜・木曜・祝日休診
+				</p>
+			</section>
+
+		</main>
+	</div>
+	<footer></footer>
+</body>
+</html>

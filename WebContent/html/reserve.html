@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>診察予約</title>
+<style>
+h1 {
+	text-align: center;
+	color: #FF773E;
+}
+
+form {
+	text-align: center;
+}
+
+p {
+	padding-bottom: 10px;
+}
+
+header {
+	border-top: double 10px #8B4513;
+}
+
+footer {
+	border-bottom: solid 10px #8B4513;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: #8B4513;
+}
+</style>
+</head>
+<body>
+
+	<header>
+		<h1>Web予約</h1>
+	</header>
+	<form action="../SampleLogin/src/jp.co.aforcr.servlets.reserve"
+		method="post">
+		<p>
+			氏名<input type="text" name="name" required>
+		</p>
+		<p>
+			日付<input type="date" name="date" min="2021-07-09" max="2021-08-08"
+				required>
+		</p>
+		<p>
+			時間<input type="time" name="time" step="900" min="09:30" max="18:15"
+				required>
+		</p>
+		<input type="submit" value="予約">
+	</form>
+	<footer></footer>
+
+</body>
+</html>
